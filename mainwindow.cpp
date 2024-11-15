@@ -3340,6 +3340,11 @@ void MainWindow::updateLabel2()
                 }
             }
         }
+
+        if(ui->label_vitpreset->text().toInt()==60 || ui->label_vitpreset->text().toInt()==120 || ui->label_vitpreset->text().toInt()==180)
+        {
+            hhandler->vit_ontime(50);
+        }
     }
 }
 
